@@ -108,7 +108,7 @@ a:active { /* selected link */
 
 a.button {
     display: inline-block;
-    background-color: #03ed9f;
+    background-color: red;
     color: #212830;
     font-weight: 700;
     padding: 10px;
