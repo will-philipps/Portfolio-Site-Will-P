@@ -1,0 +1,1 @@
+console.log("Welcome to my potfolio! Feel free to get in touch if you have any questions.")
