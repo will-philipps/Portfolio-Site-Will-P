@@ -49,8 +49,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: #F9FAFB;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   list-style-type: none;
   width: [object Object]px; 
   height: [object Object]px; 
@@ -61,13 +60,9 @@ header {
   -moz-box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.2)  ;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
 
 main {
-  padding-top: 145.19px;
+  padding-top: 81px;
 }
 
 footer {
@@ -142,15 +137,13 @@ a.button-contact:hover,a.button-contact:active {
     text-decoration: none;
 }
 
+
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-  width: 90px;
-}
 
 nav > ul > li > a {
   padding: 0px;
@@ -214,21 +207,51 @@ nav > ul > li > a:active {
   text-align: center;
 }
 
+.center-profile-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* custom logo sizing */
 .logo {
     max-width: 60px;
     height: auto;
   }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 16px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #102335;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 .profile-img {
   max-width: 350px;
   margin: 0 auto;
-}
-
-.center-profile-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .row {
@@ -350,6 +373,15 @@ Medium devices (640px and larger)
     float: right;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    width: 90px;
+  }
+
   main {
     padding-top: 94.59px;
   }
@@ -364,6 +396,14 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .profile-img {

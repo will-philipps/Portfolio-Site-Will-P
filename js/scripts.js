@@ -1,1 +1,8 @@
-console.log("Welcome to my potfolio! Feel free to get in touch if you have any questions.")
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
